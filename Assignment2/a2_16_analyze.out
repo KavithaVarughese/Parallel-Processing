@@ -1,0 +1,345 @@
+++++ n=100000 ++++
+[cpn-f10-14:109494:0:109494] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109495:0:109495] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109494) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+==== backtrace (tid: 109495) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109494 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109495 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+++++ n=400000 ++++
+[cpn-f10-14:109517:0:109517] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109516:0:109516] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109516) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+==== backtrace (tid: 109517) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109516 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109517 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+++++ n=1600000 ++++
+[cpn-f10-14:109545:0:109545] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109546:0:109546] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109545) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109545 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109546 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+++++ n=6400000 ++++
+[cpn-f10-14:109569:0:109569] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109568:0:109568] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109568) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+==== backtrace (tid: 109569) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109568 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109569 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+++++ n=25600000 ++++
+[cpn-f10-14:109591:0:109591] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109590:0:109590] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109590) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+==== backtrace (tid: 109591) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109590 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109591 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+++++ n=102400000 ++++
+[cpn-f10-14:109617:0:109617] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109616:0:109616] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109616) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+==== backtrace (tid: 109617) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109616 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109617 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+++++ n=409600000 ++++
+[cpn-f10-14:109644:0:109644] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109643:0:109643] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109643) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+==== backtrace (tid: 109644) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109643 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109644 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+++++ n=1638400000 ++++
+[cpn-f10-14:109665:0:109665] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109664:0:109664] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109664) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109664 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109665 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+++++ n=6553600000 ++++
+[cpn-f10-14:109687:0:109687] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+[cpn-f10-14:109686:0:109686] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x30)
+==== backtrace (tid: 109686) ====
+ 0 0x0000000000039040 __sigaction()  ???:0
+ 1 0x0000000000011134 psm2_ep_num_devunits()  ???:0
+ 2 0x00000000000105cd psmx2_getinfo()  psmx2_init.c:0
+ 3 0x00000000000099c7 fi_getinfo_()  osd.c:0
+ 4 0x00000000006c1261 MPIDI_OFI_mpi_init_hook()  /build/impi/_buildspace/release/../../src/mpid/ch4/netmod/ofi/ofi_init.c:1552
+ 5 0x00000000002109dd MPID_Init()  /build/impi/_buildspace/release/../../src/mpid/ch4/src/ch4_init.c:1307
+ 6 0x000000000052a1a3 MPIR_Init_thread()  /build/impi/_buildspace/release/../../src/mpi/init/initthread.c:142
+ 7 0x000000000052971b PMPI_Init()  /build/impi/_buildspace/release/../../src/mpi/init/init.c:140
+ 8 0x00000000004023d5 main()  ???:0
+ 9 0x0000000000023c8a __libc_init_first()  ???:0
+10 0x0000000000023d3c __libc_start_main()  ???:0
+11 0x00000000004022b1 _start()  ???:0
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 109686 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 109687 RUNNING AT cpn-f10-14
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================

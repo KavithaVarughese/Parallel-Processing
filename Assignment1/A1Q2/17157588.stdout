@@ -1,0 +1,278 @@
+LETS START THE TEST CASES
+NODE DETAILS
+JOB_ID=17157588
+hostname=cpn-v05-38.core.ccr.buffalo.edu
+ARCH=avx512
+Wed Dec  4 07:41:10 PM UTC 2024
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        46 bits physical, 57 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               56
+On-line CPU(s) list:                  0-55
+Vendor ID:                            GenuineIntel
+Model name:                           Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz
+CPU family:                           6
+Model:                                106
+Thread(s) per core:                   1
+Core(s) per socket:                   28
+Socket(s):                            2
+Stepping:                             6
+CPU max MHz:                          3100.0000
+CPU min MHz:                          800.0000
+BogoMIPS:                             4000.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+L1d cache:                            2.6 MiB (56 instances)
+L1i cache:                            1.8 MiB (56 instances)
+L2 cache:                             70 MiB (56 instances)
+L3 cache:                             84 MiB (2 instances)
+NUMA node(s):                         2
+NUMA node0 CPU(s):                    0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54
+NUMA node1 CPU(s):                    1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55
+Vulnerability Gather data sampling:   Mitigation; Microcode
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+=========================== Test Case 1 ==================================
+++++ n=10000 p=1 ++++
+1.22464
+++++ n=10000 p=2 ++++
+0.596666
+++++ n=10000 p=4 ++++
+0.306449
+++++ n=10000 p=8 ++++
+0.159594
+++++ n=10000 p=16 ++++
+0.0815463
+++++ n=10000 p=32 ++++
+0.0467549
+++++ n=40000 p=1 ++++
+29.9752
+++++ n=40000 p=2 ++++
+20.6086
+++++ n=40000 p=4 ++++
+9.63911
+++++ n=40000 p=8 ++++
+4.21743
+++++ n=40000 p=16 ++++
+2.36011
+++++ n=40000 p=32 ++++
+1.51139
+++++ n=160000 p=1 ++++
+537.615
+++++ n=160000 p=2 ++++
+379.153
+++++ n=160000 p=4 ++++
+200.954
+++++ n=160000 p=8 ++++
+139.631
+++++ n=160000 p=16 ++++
+95.0338
+++++ n=160000 p=32 ++++
+65.5663
+++++ n=640000 p=1 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209798 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=640000 p=2 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209814 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=640000 p=4 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209828 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=640000 p=8 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209832 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=640000 p=16 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209846 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=640000 p=32 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209852 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=2560000 p=1 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209878 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=2560000 p=2 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209883 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=2560000 p=4 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209896 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=2560000 p=8 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209900 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=2560000 p=16 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209914 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=2560000 p=32 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209918 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=10240000 p=1 ++++
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209943 Aborted                 OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=10240000 p=2 ++++
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209944 Aborted                 OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=10240000 p=4 ++++
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209945 Aborted                 OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=10240000 p=8 ++++
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209946 Aborted                 OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=10240000 p=16 ++++
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209947 Aborted                 OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=10240000 p=32 ++++
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/spool/slurmd/job17157588/slurm_script: line 31: 209948 Aborted                 OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+=========================== Test Case 2 ==================================
+++++ n=100 p=1 ++++
+3.3363e-05
+++++ n=100 p=2 ++++
+0.000210158
+++++ n=100 p=4 ++++
+0.000277619
+++++ n=100 p=8 ++++
+0.000432916
+++++ n=100 p=16 ++++
+0.000686351
+++++ n=100 p=32 ++++
+0.00118802
+++++ n=400 p=1 ++++
+0.000407175
+++++ n=400 p=2 ++++
+0.000313848
+++++ n=400 p=4 ++++
+0.000461149
+++++ n=400 p=8 ++++
+0.000452958
+++++ n=400 p=16 ++++
+0.000666819
+++++ n=400 p=32 ++++
+0.00129273
+++++ n=1600 p=1 ++++
+0.00881699
+++++ n=1600 p=2 ++++
+0.00627769
+++++ n=1600 p=4 ++++
+0.00527061
+++++ n=1600 p=8 ++++
+0.00387837
+++++ n=1600 p=16 ++++
+0.00250986
+++++ n=1600 p=32 ++++
+0.00203413
+++++ n=6400 p=1 ++++
+0.388235
+++++ n=6400 p=2 ++++
+0.197595
+++++ n=6400 p=4 ++++
+0.102143
+++++ n=6400 p=8 ++++
+0.0530067
+++++ n=6400 p=16 ++++
+0.0288478
+++++ n=6400 p=32 ++++
+0.0177588
+++++ n=25600 p=1 ++++
+11.3098
+++++ n=25600 p=2 ++++
+6.7754
+++++ n=25600 p=4 ++++
+3.20043
+++++ n=25600 p=8 ++++
+1.57889
+++++ n=25600 p=16 ++++
+0.882615
+++++ n=25600 p=32 ++++
+0.682572
+++++ n=102400 p=1 ++++
+208.36
+++++ n=102400 p=2 ++++
+145.69
+++++ n=102400 p=4 ++++
+72.6794
+++++ n=102400 p=8 ++++
+36.5162
+++++ n=102400 p=16 ++++
+29.1869
+++++ n=102400 p=32 ++++
+21.4627
+=========================== Test Case 3 ==================================
+++++ n=1000 p=1 ++++
+0.00259639
+++++ n=1000 p=2 ++++
+0.00137177
+++++ n=1000 p=4 ++++
+0.00190574
+++++ n=1000 p=8 ++++
+0.00135669
+++++ n=1000 p=16 ++++
+0.00121945
+++++ n=1000 p=32 ++++
+0.00175881
+++++ n=4000 p=1 ++++
+0.127943
+++++ n=4000 p=2 ++++
+0.0667059
+++++ n=4000 p=4 ++++
+0.0361278
+++++ n=4000 p=8 ++++
+0.0197892
+++++ n=4000 p=16 ++++
+0.012648
+++++ n=4000 p=32 ++++
+0.00925801
+++++ n=16000 p=1 ++++
+3.14763
+++++ n=16000 p=2 ++++
+1.58117
+++++ n=16000 p=4 ++++
+0.823529
+++++ n=16000 p=8 ++++
+0.406186
+++++ n=16000 p=16 ++++
+0.21204
+++++ n=16000 p=32 ++++
+0.119301
+++++ n=64000 p=1 ++++
+93.2804
+++++ n=64000 p=2 ++++
+55.4295
+++++ n=64000 p=4 ++++
+23.5842
+++++ n=64000 p=8 ++++
+11.9804
+++++ n=64000 p=16 ++++
+7.75081
+++++ n=64000 p=32 ++++
+5.92234
+++++ n=256000 p=1 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211328 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=256000 p=2 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211333 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=256000 p=4 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211346 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=256000 p=8 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211350 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=256000 p=16 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211376 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=256000 p=32 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211379 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=1024000 p=1 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211395 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=1024000 p=2 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211398 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=1024000 p=4 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211415 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=1024000 p=8 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211420 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=1024000 p=16 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211446 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+++++ n=1024000 p=32 ++++
+/var/spool/slurmd/job17157588/slurm_script: line 53: 211450 Killed                  OMP_NUM_THREADS=${j} ./a1 ${i} ${i}
+=========================== THE END ==================================
+slurmstepd: error: Detected 24 oom_kill events in StepId=17157588.batch. Some of the step tasks have been OOM Killed.
